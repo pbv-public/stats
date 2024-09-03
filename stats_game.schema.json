@@ -1,0 +1,37 @@
+{
+  "$id": "/stats/game",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Various stats about the game for advanced players.",
+  "properties": {
+    "game": {
+      "$ref": "/insights/game_data",
+      "description": "Contains data about the game overall.",
+      "title": "Game Data"
+    },
+    "players": {
+      "description": "Each player's advanced stats over the whole game.",
+      "items": {
+        "$ref": "/stats/player",
+        "description": "Contains player-specific stats over the whole game.",
+        "title": "Player Stats"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array"
+    },
+    "version": {
+      "$ref": "/types/version",
+      "const": "0.0.1",
+      "description": "a version string matching x.x.x where x represents one or more digits",
+      "title": "Version"
+    }
+  },
+  "required": [
+    "version",
+    "game",
+    "players"
+  ],
+  "title": "Stats",
+  "type": "object"
+}
