@@ -249,6 +249,21 @@
       "description": "The percentage of time when this player was to the left of their partner.",
       "title": "Percentage"
     },
+    "team_long_length_rallies_won": {
+      "$ref": "/types/percentage",
+      "description": "Percent of rallies won by this player's team when the rally is 11 or more shots long.",
+      "title": "Percentage"
+    },
+    "team_medium_length_rallies_won": {
+      "$ref": "/types/percentage",
+      "description": "Percent of rallies won by this player's team when the rally is [6,10] shots long.",
+      "title": "Percentage"
+    },
+    "team_short_length_rallies_won": {
+      "$ref": "/types/percentage",
+      "description": "Percent of rallies won by this player's team when the rally is [1,5] shots long.",
+      "title": "Percentage"
+    },
     "team_shot_percentage": {
       "$ref": "/types/percentage",
       "description": "The percentage of total team shots taken by the player.",
