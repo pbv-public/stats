@@ -1,5 +1,12 @@
 # Stats Schema Changelog
 
+## [v1.0.2](https://github.com/pbv-public/stats/releases/tag/v1.0.2) on 2024-Nov-04
+> * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v1.0.1...v1.0.2?expand=1)
+> * Version Checksums: Functional=498f21cb9ce0163551e522ee46773a07 Full=fb3c186d85912eddbd4a208f4f9f85aa
+
+- added `session` to indicate game vs. drill and how many participants
+
+-------------------------------------
 ## [v1.0.1](https://github.com/pbv-public/stats/releases/tag/v1.0.1) on 2024-Sep-07
 > * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v1.0.0...v1.0.1?expand=1)
 > * Version Checksums: Functional=6e63a3da8d4e3954b373eab12276f5ec Full=ac5c40635576de3261cc15cec99eb5ce
