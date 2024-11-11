@@ -12,16 +12,8 @@
     "players": {
       "description": "Each player's advanced stats over the whole game.  If the player's location is unknown, the value for that player will be null.",
       "items": {
-        "anyOf": [
-          {
-            "type": "null"
-          },
-          {
-            "$ref": "/stats/player",
-            "description": "Contains player-specific stats over the whole game.",
-            "title": "Player Stats"
-          }
-        ]
+        "$ref": "/stats/player",
+        "title": "Player Stats"
       },
       "maxItems": 4,
       "minItems": 4,
@@ -34,7 +26,7 @@
     },
     "version": {
       "$ref": "/types/version",
-      "const": "0.0.3",
+      "const": "0.0.4",
       "description": "a version string matching x.x.x where x represents one or more digits",
       "title": "Version"
     }
