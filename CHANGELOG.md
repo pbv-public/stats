@@ -1,5 +1,12 @@
 # Stats Schema Changelog
 
+## [v0.0.5](https://github.com/pbv-public/stats/releases/tag/v0.0.5) on 2024-Nov-12
+> * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v0.0.4...v0.0.5?expand=1)
+> * Version Checksums: Functional=498f21cb9ce0163551e522ee46773a07 Full=fb3c186d85912eddbd4a208f4f9f85aa
+
+- Fix the problem with Nullable types
+
+-------------------------------------
 ## [v0.0.4](https://github.com/pbv-public/stats/releases/tag/v0.0.4) on 2024-Nov-11
 > * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v0.0.3...v0.0.4?expand=1)
 > * Version Checksums: Functional=9de44554b7ff491b938f04fe26d95be5 Full=c0bee0d90885115af4f77771323d82c5
