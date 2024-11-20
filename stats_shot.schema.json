@@ -1,0 +1,116 @@
+{
+  "$id": "/stats/shot",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Contains stats about the player's shots.",
+  "properties": {
+    "average_baseline_distance": {
+      "description": "Average distance from the opponent's baseline",
+      "type": "number"
+    },
+    "average_height_above_net": {
+      "description": "Average height above the net as the ball crosses it",
+      "type": "number"
+    },
+    "average_quality": {
+      "$ref": "/types/quality_score",
+      "description": "Average quality score of shots",
+      "title": "Quality Score"
+    },
+    "count": {
+      "$ref": "/types/count",
+      "description": "Total number of shots",
+      "title": "Count"
+    },
+    "median_baseline_distance": {
+      "description": "Median distance from the opponent's baseline",
+      "type": "number"
+    },
+    "median_height_above_net": {
+      "description": "Median height above the net as the ball crosses it",
+      "type": "number"
+    },
+    "outcome_stats": {
+      "additionalProperties": false,
+      "description": "Categorizes shot outcomes for this type of shot. Omitted if there are none attempted.",
+      "properties": {
+        "attempt_percentage": {
+          "$ref": "/types/percentage",
+          "description": "The percentage of attempted shots out of the total opportunities for the shot.",
+          "title": "Percentage"
+        },
+        "high_quality_shot_rally_won_percentage": {
+          "$ref": "/types/percentage",
+          "description": "The percentage of high quality shots where the player's team won the rally. A high quality shot has a score of .8 or greater. Omitted if no high quality shots were attempted.",
+          "title": "Percentage"
+        },
+        "low_quality_shot_rally_won_percentage": {
+          "$ref": "/types/percentage",
+          "description": "The percentage of low quality shots where the player's team won the rally. A high quality shot has a score of .4 or less. Omitted if no low quality shots were attempted.",
+          "title": "Percentage"
+        },
+        "net_fault_percentage": {
+          "$ref": "/types/percentage",
+          "description": "The percentage of shots that hit the net out of the total attempts.",
+          "title": "Percentage"
+        },
+        "out_fault_percentage": {
+          "$ref": "/types/percentage",
+          "description": "The percentage of shots hit out of the total attempts.",
+          "title": "Percentage"
+        },
+        "rally_won_percentage": {
+          "$ref": "/types/percentage",
+          "description": "The percentage of rallies won out of the total number of rallies with attempts",
+          "title": "Percentage"
+        },
+        "success_percentage": {
+          "$ref": "/types/percentage",
+          "description": "The percentage of successful shots out of the total attempts.",
+          "title": "Percentage"
+        }
+      },
+      "required": [
+        "attempt_percentage",
+        "success_percentage",
+        "rally_won_percentage",
+        "out_fault_percentage",
+        "net_fault_percentage"
+      ],
+      "title": "Shot Outcome Stats",
+      "type": "object"
+    },
+    "speed_stats": {
+      "additionalProperties": false,
+      "properties": {
+        "average": {
+          "$ref": "/types/speed",
+          "description": "The average shot speed across all shots by the player (MPH).",
+          "title": "Speed"
+        },
+        "fastest": {
+          "$ref": "/types/speed",
+          "description": "The fastest shot by the player (MPH).",
+          "title": "Speed"
+        },
+        "median": {
+          "$ref": "/types/speed",
+          "description": "The median shot speed across all shots by the player (MPH).",
+          "title": "Speed"
+        }
+      },
+      "required": [
+        "fastest",
+        "median",
+        "average"
+      ],
+      "title": "Shot Speed",
+      "type": "object"
+    }
+  },
+  "required": [
+    "count"
+  ],
+  "title": "Shot Stats",
+  "type": "object"
+}
