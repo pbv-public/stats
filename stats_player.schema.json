@@ -11,7 +11,7 @@
     },
     "average_x_coverage_percentage": {
       "$ref": "/types/percentage",
-      "description": "The average amount of time each player spent on the left side of the court.",
+      "description": "The average percentage of court width coverage assigned to the player during rallies, based on their positioning relative to their partner. It's only relevant in doubles; not included for singles games.",
       "title": "Percentage"
     },
     "backhands": {
@@ -317,7 +317,6 @@
     "role_stats",
     "ball_directions",
     "total_distance_covered",
-    "average_x_coverage_percentage",
     "team_shot_percentage",
     "team_left_side_percentage",
     "team_thirds_percentage",
