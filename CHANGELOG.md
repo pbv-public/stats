@@ -1,5 +1,12 @@
 # Stats Schema Changelog
 
+## [v0.0.7](https://github.com/pbv-public/stats/releases/tag/v0.0.7) on 2025-Jul-14
+> * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v0.0.6...v0.0.7?expand=1)
+> * Version Checksums: Functional=d9fd7aa014c6e0a7373fb6b094d21ef0 Full=0b614be487264496c70924d986373547
+
+- Docs updates: for the `kitchen_arrival` we specify that we consider only "rallies with at least 3 shots"
+
+-------------------------------------
 ## [v0.0.6](https://github.com/pbv-public/stats/releases/tag/v0.0.6) on 2025-May-17
 > * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v0.0.5...v0.0.6?expand=1)
 > * Version Checksums: Functional=139ee6fae36b5c0902caab2915f024e0 Full=a16d60921c67122cf4b3fc37865619b1
