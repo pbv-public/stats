@@ -1,5 +1,13 @@
 # Stats Schema Changelog
 
+## [v2.0.0](https://github.com/pbv-public/stats/releases/tag/v2.0.0) on 2025-Aug-07
+> * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v1.4.1...v2.0.0?expand=1)
+> * Version Checksums: Functional=85234ba31816641f701418262db0cd3b Full=e7048d44238f99d50cdabedcb22b3c83
+
+- Multi-session videos support
+- Most important change is in the URL structure, now it contains the session ID: instead of /{video_id}/stats.json it is now /{video_id}/{session_id}/stats.json, where session_id is 0-based index of the session in the video. Client can iterate through sessions using the session_id until it gets 404 Not Found.
+
+-------------------------------------
 ## [v1.4.1](https://github.com/pbv-public/stats/releases/tag/v1.4.1) on 2025-Jul-14
 > * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v1.4.0...v1.4.1?expand=1)
 > * Version Checksums: Functional=d9fd7aa014c6e0a7373fb6b094d21ef0 Full=0b614be487264496c70924d986373547
