@@ -128,6 +128,118 @@
       "description": "Stats about shots from the kitchen or near the kitchen area. Omitted if the player did not hit any shots from the kitchen or near the kitchen area.",
       "title": "Shot Stats"
     },
+    "kitchen_arrival_percentage": {
+      "additionalProperties": false,
+      "description": "Counts of fair kitchen-arrival opportunities (denominator) and successful arrivals (numerator), broken down by serving/returning roles for the player and their partner.",
+      "properties": {
+        "returning": {
+          "additionalProperties": false,
+          "properties": {
+            "oneself": {
+              "additionalProperties": false,
+              "properties": {
+                "denominator": {
+                  "$ref": "/types/count",
+                  "description": "Number of rallies where the player had a fair opportunity to arrive within a few feet of the kitchen when on the returning team, as the returner (requires at least 3 non-fault shots).",
+                  "title": "Count"
+                },
+                "numerator": {
+                  "$ref": "/types/count",
+                  "description": "Number of rallies where the player successfully arrived within a few feet of the kitchen when on the returning team, as the returner (requires at least 3 non-fault shots).",
+                  "title": "Count"
+                }
+              },
+              "required": [
+                "numerator",
+                "denominator"
+              ],
+              "type": "object"
+            },
+            "partner": {
+              "additionalProperties": false,
+              "properties": {
+                "denominator": {
+                  "$ref": "/types/count",
+                  "description": "Number of rallies where the player had a fair opportunity to arrive within a few feet of the kitchen when on the returning team, as the partner of the returner (requires at least 3 non-fault shots).",
+                  "title": "Count"
+                },
+                "numerator": {
+                  "$ref": "/types/count",
+                  "description": "Number of rallies where the player successfully arrived within a few feet of the kitchen when on the returning team, as the partner of the returner (requires at least 3 non-fault shots).",
+                  "title": "Count"
+                }
+              },
+              "required": [
+                "numerator",
+                "denominator"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "oneself",
+            "partner"
+          ],
+          "type": "object"
+        },
+        "serving": {
+          "additionalProperties": false,
+          "properties": {
+            "oneself": {
+              "additionalProperties": false,
+              "properties": {
+                "denominator": {
+                  "$ref": "/types/count",
+                  "description": "Number of rallies where the player had a fair opportunity to arrive within a few feet of the kitchen when on the serving team, as the server (requires at least 4 non-fault shots).",
+                  "title": "Count"
+                },
+                "numerator": {
+                  "$ref": "/types/count",
+                  "description": "Number of rallies where the player successfully arrived within a few feet of the kitchen when on the serving team, as the server (requires at least 4 non-fault shots).",
+                  "title": "Count"
+                }
+              },
+              "required": [
+                "numerator",
+                "denominator"
+              ],
+              "type": "object"
+            },
+            "partner": {
+              "additionalProperties": false,
+              "properties": {
+                "denominator": {
+                  "$ref": "/types/count",
+                  "description": "Number of rallies where the player had a fair opportunity to arrive within a few feet of the kitchen when on the serving team, as the partner of the server (requires at least 4 non-fault shots).",
+                  "title": "Count"
+                },
+                "numerator": {
+                  "$ref": "/types/count",
+                  "description": "Number of rallies where the player successfully arrived within a few feet of the kitchen when on the serving team, as the partner of the server (requires at least 4 non-fault shots).",
+                  "title": "Count"
+                }
+              },
+              "required": [
+                "numerator",
+                "denominator"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "oneself",
+            "partner"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "serving",
+        "returning"
+      ],
+      "title": "Kitchen Arrival Opportunity Stats",
+      "type": "object"
+    },
     "left_side_player": {
       "$ref": "/stats/shot",
       "description": "Stats about shots as the left-side player. Omitted if the player did not hit any shots as the left-side player.",
@@ -315,6 +427,7 @@
     "out_fault_percentage",
     "net_fault_percentage",
     "role_stats",
+    "kitchen_arrival_percentage",
     "ball_directions",
     "total_distance_covered",
     "team_shot_percentage",

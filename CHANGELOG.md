@@ -1,5 +1,12 @@
 # Stats Schema Changelog
 
+## [v0.0.9](https://github.com/pbv-public/stats/releases/tag/v0.0.9) on 2025-Nov-12
+> * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v0.0.8...v0.0.9?expand=1)
+> * Version Checksums: Functional=88f8f339fa3d682e8542eba0e8676bee Full=77414163903bbb3691c1f5783c49e66a
+
+- New structure, `kitchen_arrival_percentage`, with a new, improved algorithm for calculating the percentage of fair-chance kitchen arrivals.
+
+-------------------------------------
 ## [v0.0.8](https://github.com/pbv-public/stats/releases/tag/v0.0.8) on 2025-Aug-07
 > * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v0.0.7...v0.0.8?expand=1)
 > * Version Checksums: Functional=85234ba31816641f701418262db0cd3b Full=e7048d44238f99d50cdabedcb22b3c83
