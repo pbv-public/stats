@@ -1,5 +1,12 @@
 # Stats Schema Changelog
 
+## [v2.2.0](https://github.com/pbv-public/stats/releases/tag/v2.2.0) on 2026-Feb-26
+> * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v2.1.0...v2.2.0?expand=1)
+> * Version Checksums: Functional=8280a25f9fdbe49411a5f495a58d0a68 Full=71596bd6f009b75a9c01a09168d221dc
+
+- Added `team_kitchen_arrival` to player stats with team-level kitchen arrival stats (numerator/denominator counts for serving and returning roles, where both teammates had a fair opportunity to arrive at the kitchen)
+
+-------------------------------------
 ## [v2.1.0](https://github.com/pbv-public/stats/releases/tag/v2.1.0) on 2025-Nov-12
 > * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v2.0.0...v2.1.0?expand=1)
 > * Version Checksums: Functional=88f8f339fa3d682e8542eba0e8676bee Full=77414163903bbb3691c1f5783c49e66a
