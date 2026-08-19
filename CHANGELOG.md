@@ -1,5 +1,13 @@
 # Stats Schema Changelog
 
+## [v2.2.1](https://github.com/pbv-public/stats/releases/tag/v2.2.1) on 2026-Aug-19
+> * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v2.2.0...v2.2.1?expand=1)
+> * Version Checksums: Functional=2300f72312a682de0d9b0adf853ce5c0 Full=f24dfe45486511102c88ee407c7fc5e3
+
+- Documentation: `player.team_short_length_rallies_won`, `player.team_medium_length_rallies_won`, and `player.team_long_length_rallies_won` now state that rallies whose winner could not be determined are excluded from the denominator, and that the field is absent when no rally of that length had a determined winner.
+- `session.num_players` description no longer refers to ball machines or `is_ball_machine`.
+
+-------------------------------------
 ## [v2.2.0](https://github.com/pbv-public/stats/releases/tag/v2.2.0) on 2026-Feb-26
 > * [Compare to Previous Version](https://github.com/pbv-public/stats/compare/v2.1.0...v2.2.0?expand=1)
 > * Version Checksums: Functional=8280a25f9fdbe49411a5f495a58d0a68 Full=71596bd6f009b75a9c01a09168d221dc

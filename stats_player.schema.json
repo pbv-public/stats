@@ -415,17 +415,17 @@
     },
     "team_long_length_rallies_won": {
       "$ref": "/types/percentage",
-      "description": "Percent of rallies won by this player's team when the rally is 11 or more shots long.",
+      "description": "Percent of rallies won by this player's team when the rally is 11 or more shots long. Rallies whose winner could not be determined are excluded; absent when no such rally had a determined winner.",
       "title": "Percentage"
     },
     "team_medium_length_rallies_won": {
       "$ref": "/types/percentage",
-      "description": "Percent of rallies won by this player's team when the rally is [6,10] shots long.",
+      "description": "Percent of rallies won by this player's team when the rally is [6,10] shots long. Rallies whose winner could not be determined are excluded; absent when no such rally had a determined winner.",
       "title": "Percentage"
     },
     "team_short_length_rallies_won": {
       "$ref": "/types/percentage",
-      "description": "Percent of rallies won by this player's team when the rally is [1,5] shots long.",
+      "description": "Percent of rallies won by this player's team when the rally is [1,5] shots long. Rallies whose winner could not be determined are excluded; absent when no such rally had a determined winner.",
       "title": "Percentage"
     },
     "team_shot_percentage": {
